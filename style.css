@@ -201,7 +201,7 @@ body {
     .content .text {
         height: 35%;
         width: 100%;
-
+        gap:35vw;
         /* background-color: red; */
         overflow-x: auto;
     }
@@ -215,7 +215,6 @@ body {
 
     .elem h1 {
         font-size: 15vw;
-        gap:10vw;
         font-weight: 500;
         white-space: inherit;
         padding-left: 35vw;
