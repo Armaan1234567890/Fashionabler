@@ -214,11 +214,11 @@ body {
     }
 
     .elem h1 {
-        font-size: 12vw;
+        font-size: 15vw;
         font-weight: 500;
         white-space: inherit;
-        padding-left: 35vw;
-        padding-right: 5vw;
+        margin-left: 10vw;
+        margin-right: 5vw;
     }
 
     .text::-webkit-scrollbar {
