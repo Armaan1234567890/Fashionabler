@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ededed;
+}
+
+.nav {
+    height: 80px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-part1 {
+    padding-left: 3%;
+    display: flex;
+}
+
+.nav-part1 .gola {
+    height: 28px;
+    width: 28px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 2vw;
+    padding-right: 3%;
+}
+
+.nav-part2 h4 {
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    gap: 5%;
+    /* background-color: red; */
+    height: 80px;
+    width: 100%;
+}
+
+.nav2 h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.content {
+    height: calc(100% - 160px);
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.content .text {
+    display: flex;
+    height: 40%;
+    width: 100%;
+    /* background-color: red; */
+    overflow-x: auto;
+}
+
+.text .elem {
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem h1 {
+    font-size: 5vw;
+    font-weight: 400;
+}
+
+.text::-webkit-scrollbar {
+    background-color: transparent;
+    height: 7px;
+}
+
+.text::-webkit-scrollbar-thumb {
+    background-color: orange;
+}
+
+.image {
+    height: 60%;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    overflow-x: auto;
+}
+
+.image::-webkit-scrollbar {
+    display: none;
+}
+
+.image img {
+    flex-shrink: 0;
+    position: 20% 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image :nth-child(2) {
+    object-position: 30% 30%;
+
+}
+
+.image :nth-child(3) {
+    object-position: 20% 15%;
+
+}
+
+@media (max-width:600px) {
+    .nav {
+        height: 10vh;
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .nav-part1 {
+        padding-left: 3%;
+        display: flex;
+    }
+
+    .nav-part1 .gola {
+        height: 15px;
+        width: 15px;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .nav-part2 {
+        display: flex;
+        gap: 1vw;
+        padding-right: 2%;
+
+    }
+
+    .nav-part2 h4 {
+        font-size: 3vw;
+        font-weight: 600;
+        display: none;
+        margin-right: 5vw;
+    }
+
+    .nav-part2 h4:nth-child(1) {
+        display: initial;
+    }
+
+    .nav-part2 h5 {
+        font-size: 4vw;
+        font-weight: 600;
+    }
+
+    .nav2 {
+        display: flex;
+        align-items: center;
+        padding-left: 2%;
+        gap: 2.5%;
+        /* background-color: red; */
+        height: 6vw;
+        width: 100%;
+        padding-right: 1vw;
+    }
+
+    .nav2 h4 {
+        font-size: 2.6vw;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    .content {
+        height: calc(100% - 11vh);
+        width: 100%;
+        /* background-color: aqua; */
+    }
+
+    .content .text {
+        height: 35%;
+        width: 100%;
+        gap: 40vw;
+        /* background-color: red; */
+        overflow-x: auto;
+    }
+
+    .text .elem {
+        flex-shrink: 0;
+        height: 100%;
+        width: 50%;
+        /* background-color: aqua; */
+    }
+
+    .elem h1 {
+        font-size: 15vw;
+        font-weight: 500;
+        white-space: inherit;
+        padding-left: 35vw;
+        padding-right: 5vw;
+    }
+
+    .text::-webkit-scrollbar {
+        background-color: transparent;
+        height: 7px;
+    }
+
+    .text::-webkit-scrollbar-thumb {
+        background-color: orange;
+    }
+
+    .image {
+        height: 65%;
+    }
+
+    .image img {
+        flex-shrink: 0;
+        position: 20% 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image :nth-child(2) {
+        object-position: 30% 30%;
+
+    }
+
+    .image :nth-child(3) {
+        object-position: 20% 15%;
+
+    }
+
+
+}
